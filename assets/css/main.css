@@ -4,16 +4,29 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
 }
 html{
   scroll-behavior: smooth;
 }
-
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 0px;
+  margin: 0px;
+  color: #333;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
 /* custom scroll bar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -233,21 +246,19 @@ section .title::after{
   filter: brightness(90%);
 }
 
-
 /* home section styling */
 .home{
-  
   display: flex;
   background:
   linear-gradient(
-      rgba(0, 0, 0, 0.733), rgba(34, 26, 26, 0.651)
+      rgba(0, 0, 0, 0.712),rgba(34, 26, 26, 0.651)
       ),url("/assets/img/baner1.jpeg") no-repeat center;
   height: 100vh;
   color: #fff;
   min-height: 500px;
   background-size: cover;
   background-attachment: fixed;
-  font-family: 'Ubuntu', sans-serifS;
+  font-family: 'Ubuntu', sans-serif;
 }
 .home .max-width{
 width: 100%;

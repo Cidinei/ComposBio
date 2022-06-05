@@ -234,7 +234,7 @@
     <!-- contact section start -->
     <section class="contact" id="contact">
         <div class="max-width">
-            <h2 class="title">Contact me</h2>
+            <h2 class="title">Contatos</h2>
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Entrar em Contato</div>
@@ -276,6 +276,14 @@
                     <div class="text">Envie-nos uma mensagem</div>
                     <form action="https://formsubmit.co/contato@composbio.com.br" method="POST">
                         <div class="fields">
+                            <div>
+                                <input type="hidden" name="_template" value="box">
+                                <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato. Em breve vamos te ligar ou mandar um e-mail">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_cc" value="marketing@composbio.com.br">
+                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/social.html">
+                                <input type="text" name="_honey" style="display:none">
+                            </div>
                             <div class="field name">
                                 <input type="text" name="name" placeholder="Name" required>
                             </div>
@@ -290,7 +298,7 @@
                             <textarea cols="30" rows="10" name="message" placeholder="Mensagem..." required></textarea>
                         </div>
                         <div class="button-area">
-                            <button type="submit">Send message</button>
+                            <button type="submit">ENVIAR</button>
                         </div>
                     </form>
                 </div>
