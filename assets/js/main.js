@@ -53,7 +53,6 @@ $(document).ready(function(){
         backSpeed: 60,
         loop: true
     });
-$document.addEventListener('touchstart', onTouchStart, {passive: true});
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
