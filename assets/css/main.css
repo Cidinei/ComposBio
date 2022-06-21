@@ -23,10 +23,6 @@ body{
   color: #333;
   background-color: #fff;
 }
-a {
-  text-decoration: none;
-  color: #333;
-}
 /* custom scroll bar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -44,13 +40,13 @@ a {
 /* all similar content styling codes */
 section{
   padding: 100px 0;
-}
+} 
 .max-width{
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .teams, .contact, .map, footer{
   font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -95,7 +91,8 @@ section .title::after{
 /* navbar styling */
 .navbar{
   position: fixed;
-  width: 100%;
+  align-items: center;
+  justify-content: space-between;
   z-index: 999;
   padding: 30px 0;
   font-family: 'Ubuntu', sans-serif;
@@ -118,11 +115,11 @@ section .title::after{
     padding: 15px 0;
     background: rgb(255, 255, 255);
 }
-.navbar .max-width{
+/* .navbar .max-width{
   display: flex;
   align-items: center;
   justify-content: space-between;
-} 
+}  */
 .navbar .logo{
     font-size: 30px;
     font-weight: 500;
@@ -344,7 +341,14 @@ margin-right: 0;
   color: crimson;
   background: none;
 }
-
+/* services section map */
+.map{
+  width: 100%;
+  padding-bottom: 0rem;
+}
+.map .title::after{
+  content: "Nova Mutum";
+}
 /* services section styling */
 .services, .teams{
   color:#fff;
@@ -357,7 +361,7 @@ margin-right: 0;
 .services .title::after,
 .teams .title::after{
   background: #111;
-  content: "what i provide";
+  content: "Para sua empresa";
 }
 .services .serv-content .card{
   width: calc(33% - 20px);
@@ -468,8 +472,10 @@ margin-right: 0;
 
 /* teams section styling */
 .teams .title::after{
-  content: "who with me";
+  content: "NOSSO TIME";
 }
+
+
 .teams .carousel .card{
   background: #222;
   border-radius: 6px;
@@ -531,7 +537,7 @@ margin-right: 0;
 
 /* contact section styling */
 .contact .title::after{
-  content: "get in touch";
+  content: "Esperamos por você";
 }
 .contact .contact-content .column{
   width: calc(50% - 30px);
@@ -638,8 +644,6 @@ footer span a{
 footer span a:hover{
   text-decoration: underline;
 }
-
-
 /* responsive media query start */
 @media (max-width: 1104px) {
   .about .about-content .left img{
