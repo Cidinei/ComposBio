@@ -21,6 +21,19 @@ $(document).ready(function(){
             $('.scroll-down-btn').removeClass("show");
         }
     });
+    // scroll-up button click script (scroll to top)
+    $(document).ready(function () {
+        $('.home').attr('style', 'background: linear-gradient( rgba(0, 0, 0, 0.712),rgba(34, 26, 26, 0.651)), url(/assets/img/baner1.jpeg);  background-size: cover; min-height: 500px;');       // set background image
+    
+    });
+    var imgsArray = ['/assets/img/baner1.jpeg', '/assets/img/baner2.jpeg', '/assets/img/baner2.jpeg'];
+    
+    setInterval(function () {
+        for (var i = 0; i < imgsArray.length; i++) {
+            $('.home').attr('style', 'background: linear-gradient( rgba(0, 0, 0, 0.712),rgba(34, 26, 26, 0.651)), url(' + imgsArray[i] + '); background-size: cover; min-height: 500px; loop: true;');
+        }
+    }, 5000);
+    
     // slide-up script
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
@@ -41,18 +54,19 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Coleta", "Trasnsporte", "Tratamento", "Reciclagem"],
+        strings: ["Coleta", "Transporte", "Tratamento", "Reciclagem"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Coleta", "Trasnsporte", "Tratamento", "Reciclagem"],
+        strings: ["a coleta.", "o tratamento.", "o transporte.", "a reciclagem."],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
+   
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
@@ -76,3 +90,5 @@ $(document).ready(function(){
         }
     });
 });
+
+
