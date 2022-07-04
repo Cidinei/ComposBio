@@ -1091,7 +1091,7 @@ footer span a:hover {
     }
 
     .navbar .logo {
-        margin: 7px 120px 0px -45px;
+        margin: 7px 80px 0px -45px;
     }
 }
 
@@ -1110,6 +1110,12 @@ footer span a:hover {
 @media(max-width: 360px) {
     .navbar .logo {
         margin: 7px 50px 0px -25px;
+    }
+}
+
+@media(max-width: 260px) {
+    .navbar .logo {
+        margin: 7px 25px 0px -15px;
     }
 }
 
