@@ -316,6 +316,45 @@ a.menu-btn {
     filter: brightness(90%);
    
 }
+.icons{
+    list-style: none;
+  }
+  .icons a{
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    margin: 0 15px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    align-items: center;
+  }
+  .icons a:before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border-radius: 10%;
+    background: linear-gradient(45deg, #129c40 , #0ddd1e);
+    transition: all 0.3s ease-in;
+  }
+  .icons a:hover:before{
+    transform: rotate(360deg);
+    border-radius: 100%;
+  }
+  .icons a span{
+    font-size: 45px;
+    line-height: 80px;
+    color: #fff;
+    transition: all 0.3s ease-out;
+    margin: 6px 0 0 0px;
+  }
+  .icons li:hover a span{
+    transform: scale(1.2);
+  }
 
 
 /* home section styling */
@@ -492,7 +531,7 @@ a.menu-btn {
 }
 
 .services .serv-content .card:hover {
-    background: crimson;
+    background: #2c507b;
 }
 
 .services .serv-content .card .box {
@@ -505,7 +544,7 @@ a.menu-btn {
 
 .services .serv-content .card i {
     font-size: 50px;
-    color: crimson;
+    color: #2c507b;
     transition: color 0.3s ease;
 }
 
@@ -535,7 +574,7 @@ a.menu-btn {
 }
 
 .teams .carousel .card:hover {
-    background: crimson;
+    background: #2c507b;
 }
 
 .teams .carousel .card .box {
@@ -561,7 +600,8 @@ a.menu-btn {
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid crimson;
+    border: 5px solid rgb(51, 118, 79);
+
     transition: all 0.3s ease;
 }
 
@@ -1073,42 +1113,3 @@ footer span a:hover {
     }
 }
 
-.icons{
-    list-style: none;
-  }
-  .icons a{
-    height: 70px;
-    width: 70px;
-    display: inline-block;
-    margin: 0 15px;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.3s ease;
-    align-items: center;
-  }
-  .icons a:before{
-    content: '';
-    position: absolute;
-    top: 10px;
-    right: 0px;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    border-radius: 10%;
-    background: linear-gradient(45deg, #129c40 , #0ddd1e);
-    transition: all 0.3s ease-in;
-  }
-  .icons a:hover:before{
-    transform: rotate(360deg);
-    border-radius: 100%;
-  }
-  .icons a span{
-    font-size: 45px;
-    line-height: 80px;
-    color: #fff;
-    transition: all 0.3s ease-out;
-    margin: 6px 0 0 0px;
-  }
-  .icons li:hover a span{
-    transform: scale(1.2);
-  }
