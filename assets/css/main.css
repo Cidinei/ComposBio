@@ -11,6 +11,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+a{
+    text-decoration: none;
+}
 
 html {
     scroll-behavior: smooth;
@@ -218,15 +221,18 @@ a.menu-btn {
 }
 
 .navbar .menu li a:hover {
+    text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
 .navbar .menu li a:hover {
+    text-decoration: none;
     color: rgb(15, 143, 143);
 
 }
 
 .navbar.sticky .menu li a:hover {
+    text-decoration: none;
     color: rgb(15, 143, 143);
 }
 
@@ -398,6 +404,7 @@ a.menu-btn {
 .home .home-content a:hover {
     color: rgb(255, 255, 255);
     background: none;
+    text-decoration: none;
 }
 
 /* about section styling */
@@ -451,6 +458,7 @@ a.menu-btn {
 .about .about-content .right a:hover {
     color: #047ccc;
     background: none;
+    text-decoration: none;
 }
 
 /* services section map */
@@ -727,7 +735,7 @@ footer span a {
 }
 
 footer span a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .desktop {
@@ -740,6 +748,18 @@ footer span a:hover {
   }
 
 /* responsive media query start */
+@media (max-width: 1260px){
+    .services .serv-content .card {
+        width: calc(50% - 30px);
+    }
+    .desktop {
+        display: none;
+      }
+      .mobile {
+        display: block;
+      }
+}
+
 @media (max-width: 1104px) {
     .about .about-content .left img {
         width: 400px;
@@ -775,17 +795,14 @@ footer span a:hover {
         display: block;
         z-index: 999;
     }
+    .navbar .logo {
+        margin: 7px 450px 0px -110px;	
+    }
     .fa-bars:before {
         color: white;
         content: "\f0c9";
 
     }
-
-    .navbar.sticky .fa-bars:before {
-        color: #fff;
-
-    }
-
     .navbar.sticky a.menu-btn {
         color: #fff;
     }
@@ -862,13 +879,35 @@ footer span a:hover {
         margin-bottom: 36px;
     }
 }
+@media (max-width: 860px) {
+    .services .serv-content .card {
+        width: calc(50% - 30px);
+    }
+    .navbar .logo {
+        margin: 7px 300px 0px -45px;	
+    }
+}
+    
 
 @media (max-width: 690px) {
     .max-width {
         display: block;
     }
+    .contact .title::after {
+        font-size: 15px;
+    }
     #adress {
         display: none;
+    }
+    .navbar .logo {
+        margin: 7px 200px 0px -45px;	
+        letter-spacing: 1px;
+    }
+    .navbar .logo a {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-weight: 600;
+        text-decoration: none;
     }
     .navbar .logo a p{
         font-size: 5px;
@@ -877,35 +916,13 @@ footer span a:hover {
         margin-top: -10px;
           margin-left: 56px;
     }
-    .navbar .logo {
-        font-size: 25px;
-        font-weight: 500;
-        color: rgb(255, 255, 255);
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
-    
-    .navbar .logo a {
-        color: rgb(255, 255, 255);
-        font-size: 30px;
-        font-weight: 600;
-        text-decoration: none;
-    }
-    
     .navbar .logo img {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         margin-right: 5px;
         flex-direction: none;
     }
-    
-    .navbar .logo a span {
-        color: #fff;
-        transition: all 0.3s ease;
-        margin-left: 3px;
-        margin-top: -55px;
-    }
-    
+  
     .home .home-content .text-2 {
         font-size: 60px;
     }
@@ -924,19 +941,25 @@ footer span a:hover {
 
 }
 @media (max-width: 648px) {
-    .desktop {
-        display: none;
-      }
-      .mobile {
-        display: block;
-        /* ou inline, inline-block */
-      }
+    .services .serv-content .card {
+        width: calc(100% - 20px);
+    }
+    .home .home-content .text-3 {
+        font-size: 30px;
+        margin: 5px 0 35px 0;
+    }
+    .home .home-content .text-2 {
+        font-size: 45px;
+    }
 }
 
 
 @media (max-width: 500px) {
     .home .home-content .text-2 {
         font-size: 50px;
+    }
+    .navbar .logo {
+        margin: 7px 150px 0px -45px;	
     }
 
     .home .home-content .text-3 {
@@ -969,8 +992,36 @@ footer span a:hover {
         font-size: 23px;
         line-height: 38px;
     }
+    .home .home-content .text-1 {
+        font-size: 20px;
+    }
+    .home .home-content .text-3 {
+        font-size: 20px;
+        margin: 5px 0 25px 0;
+    }
+    .home .home-content .text-2 {
+        font-size: 30px;
+    }
 }
 
 @media(max-width: 480px) {
+
+    .about .title::after {
+        font-size: 15px;
+    }
    
+    .navbar .logo {
+        margin: 7px 120px 0px -45px;	
+    }
+}
+
+@media(max-width: 392px) {
+    .contact .title::after {
+        font-size: 12px;
+    }
+   
+   
+    .navbar .logo {
+        margin: 7px 60px 0px -25px;	
+    }
   }
